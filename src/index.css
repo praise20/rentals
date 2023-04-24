@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #eee;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +11,40 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.cards{
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.container{ 
+  background-color: #fff;
+  margin: 0 auto;
+  width: 250px;
+  padding-bottom: 0px;
+  height: auto;
+  line-height: 0.4em;
+  border-radius: 10px;
+}
+.description{
+  line-height: 1.3em;
+}
+.bookBtn{
+  padding: 5px 14px;
+  color: #fff;
+  border: 1px solid rgb(90, 133, 10);
+  border-radius: 5px;
+  background-color: rgb(90, 133, 10);
+}
+.price{
+  float: right;
+}
+.info{
+  padding:5px 15px;
+}
+.pad{
+  padding: 10px 15px;
+}
+img{
+  border-radius: 10px 10px 0px 0px;
 }
