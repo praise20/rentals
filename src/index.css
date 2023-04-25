@@ -12,15 +12,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* style for House.js */
+.house{
+  padding: 20px 100px ;
+}
 .cards{
-  padding-top: 10%;
-  display: flex;
-  justify-content: space-between;
+  padding: 0 !important;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  border: 1px solid black;
 }
 .container{ 
   background-color: #fff;
   margin: 0 auto;
-  width: 250px;
+  width: 220px;
   padding-bottom: 0px;
   height: auto;
   line-height: 0.4em;
@@ -47,4 +53,77 @@ code {
 }
 img{
   border-radius: 10px 10px 0px 0px;
+}
+
+/* style for Services.js */
+.service{
+  padding: 20px 100px ;
+  margin-top: 20px;
+  background-color: #fff;
+  /* padding: 15px 0px 30px 0px; */
+}
+ul{
+  padding: 0;
+  list-style: none;
+}
+li::before {
+  content: "•O• ";
+  color: rgb(90, 133, 10); 
+}
+/* style for Banner.js */
+.hero-img{
+  width: 100%;
+  background-size: cover;
+  z-index: 1;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+.hero-text{
+  text-align: center;
+  margin: auto;
+}
+
+/* media query */
+/* Mobile View */
+@media screen and (min-width:250px) and (max-width:480px) {
+  .cards{
+    grid-template-columns: auto;
+  }
+  .container{
+    margin-bottom: 20px;
+  }
+  .house{
+    padding: 20px 10px ;
+  }
+  .service{
+    padding: 20px 10px ;
+  }  
+}
+
+ /* Tablet View */
+ @media screen and (min-width:481px) and (max-width:768px) {
+  .cards{
+    grid-template-columns: auto auto;
+  }
+  .container{
+    margin-bottom: 20px;
+  }
+  .house{
+    padding: 20px 30px ;
+  }
+  .service{
+    padding: 20px 30px ;
+  }  
+}
+ /* Laptop View */
+ @media screen and (min-width:769px) and (max-width:1124px) {
+  .cards{
+    grid-template-columns: auto auto auto auto;
+  }
+  .house{
+    padding: 20px 60px ;
+  }
+  .service{
+    padding: 20px 60px ;
+  } 
 }

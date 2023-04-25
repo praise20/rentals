@@ -14,7 +14,25 @@ const house= [
   {
     id:1,
     name:"Summer bay",
-    location:"Sumber pack, Lagos,  Nigeria",
+    location:"Sumber pack, Nigeria",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+    reviews: "350 reviews",
+    price:"$120",
+    image:picTwo
+  },
+  {
+    id:0,
+    name:"Larry montry",
+    location:"Sumber pack, Australia",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+    reviews: "500 reviews",
+    price:"$200",
+    image:picOne
+  },
+  {
+    id:1,
+    name:"Summer bay",
+    location:"Sumber pack,  Nigeria",
     description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
     reviews: "350 reviews",
     price:"$120",
@@ -25,7 +43,7 @@ const house= [
 function House() {
     const houseArray = house.map(oneHouse =>
         <div className="container">
-          <img src={oneHouse.image} alt="house image" width={250} />
+          <img src={oneHouse.image} alt="house image" width={220} />
           <div className="info">
           <h3>{oneHouse.name}</h3>
           <p>{oneHouse.location}</p>
@@ -41,8 +59,9 @@ function House() {
         </div>  
       )
   return (
-    <div className="cards">
-        {houseArray}
+    <div className='house'>
+      <h3>Popular Airbnb</h3>
+      <div  className="cards">{houseArray}</div>
     </div>
   )
 }
