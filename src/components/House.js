@@ -61,7 +61,7 @@ function House() {
   return (
     <div className='house'>
       <h3>Popular Airbnb</h3>
-      <div  className="cards">{houseArray}</div>
+      <div  className="cards space">{houseArray}</div>
     </div>
   )
 }
