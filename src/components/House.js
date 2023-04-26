@@ -42,8 +42,8 @@ const house= [
 
 function House() {
     const houseArray = house.map(oneHouse =>
-        <div className="container">
-          <img src={oneHouse.image} alt="house image" width={220} />
+      <div className="container">
+          <img className='house-img' src={oneHouse.image} alt="house image"  />
           <div className="info">
           <h3>{oneHouse.name}</h3>
           <p>{oneHouse.location}</p>
@@ -56,12 +56,12 @@ function House() {
             <button className="bookBtn">Book now</button>
             <p className="price"><b>{oneHouse.price}</b><small> /night</small></p>
           </div>
-        </div>  
-      )
+        </div> 
+    )
   return (
-    <div className='house'>
-      <h3>Popular Airbnb</h3>
-      <div  className="cards space">{houseArray}</div>
+    <div>
+      <h3 className='house'>Popular Airbnb</h3>
+      <div  className="cards">{houseArray}</div>
     </div>
   )
 }

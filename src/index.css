@@ -17,16 +17,14 @@ code {
 .house{
   padding: 20px 100px ;
 }
+.house-img{
+  width:220px;
+}
 .cards{
-  padding: 0;
-  /* display: flex;
-  justify-content: space-between; */
+  padding: 20px 50px ;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  border: 1px solid black;
-}
-.space{
-  padding: 0;
+  /* border: 1px solid black; */
 }
 .container{ 
   background-color: #fff;
@@ -93,12 +91,18 @@ li::before {
 @media screen and (min-width:250px) and (max-width:480px) {
   .cards{
     grid-template-columns: auto;
+    padding: 15px ;
   }
   .container{
+    width:280px;
     margin-bottom: 20px;
   }
   .house{
     padding: 20px 10px ;
+    text-align: center;
+  }
+  .house-img{
+    width:280px;
   }
   .service{
     padding: 20px 10px ;
@@ -112,6 +116,7 @@ li::before {
  @media screen and (min-width:481px) and (max-width:768px) {
   .cards{
     grid-template-columns: auto auto auto;
+    padding: 20px 15px ;
   }
   .container{
     margin-bottom: 20px;

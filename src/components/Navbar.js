@@ -1,10 +1,14 @@
 import React from 'react';
 import {  Link } from "react-router-dom";
+import logo from "../images/logo.png"
+
 const Navbar= () =>{
   return (
   <nav>
+    {/* <p>Welcome</p>
+    <img src={logo} style={{width:100}}/> */}
     <li>
-      <Link to="/">Home</Link>
+      <Link to="/"><img src={logo} /></Link>
     </li>
     <li>
       <Link to="/about">About</Link>
@@ -14,9 +18,6 @@ const Navbar= () =>{
     </li>
     <li>
       <Link to="/service s">Services</Link>
-    </li>
-    <li>
-      <Link to="/signin">Sign in</Link>
     </li>
   </nav>
   );
