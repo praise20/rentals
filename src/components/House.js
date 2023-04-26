@@ -59,7 +59,7 @@ function House() {
         </div> 
     )
   return (
-    <div>
+    <div className='house-section'>
       <h3 className='house'>Popular Airbnb</h3>
       <div  className="cards">{houseArray}</div>
     </div>
